@@ -20,7 +20,7 @@ public class Fila<T> {
 		return fila.size();
 	}
 	
-	/*public T list() {
-		return fila.list();
-	} */
+	public void list()  throws Exception {
+		fila.list();
+	} 
 }

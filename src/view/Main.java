@@ -1,11 +1,12 @@
 package view;
-import model.Cliente;
 import model.queue;
 import java.util.Random;
+
+import controller.Cliente;
 import controller.WholesaleController;
 
 
-public class main {
+public class Main {
 
 	public static void main(String[] args) throws Exception {
 		queue<Cliente> q = new queue<>();
@@ -24,6 +25,7 @@ public class main {
 
 		WholesaleController ctrl = new WholesaleController();
 		ctrl.caixa(q);
+		System.out.println("Fila criada com " + q.size() + " clientes.");
 	}
 
 }

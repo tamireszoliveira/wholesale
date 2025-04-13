@@ -1,7 +1,6 @@
 package controller;
-import model.Cliente;
+
 import model.queue;
-import model.Cliente;
 public class WholesaleController {
 	public void caixa(queue<Cliente> fila) throws Exception {
 		while(!fila.isEmpty()) {	
